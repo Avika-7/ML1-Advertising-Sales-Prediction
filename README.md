@@ -1,38 +1,60 @@
-# PROJECT 1: Advertising Sales Prediction
+# Wine Quality Prediction
 
-## Overview
-This project analyzes the impact of advertising expenditure (TV, Radio, Newspaper) on product sales using Linear Regression.
+This project analyzes the **Red Wine Quality dataset** and builds machine learning models to predict wine quality based on its physicochemical properties.
 
-## Objectives
-- Identify correlation between advertising mediums and sales
-- Build a multiple linear regression model
-- Evaluate model performance
-- Analyze impact of feature removal
-- Study effect of feature normalization
+The notebook includes **exploratory data analysis (EDA), correlation analysis, and model training** using Decision Tree and Random Forest classifiers.
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
+---
 
-## Key Findings
-- TV advertising has the strongest correlation with Sales (~0.90)
-- Removing TV significantly reduces prediction accuracy
-- Feature normalization does not significantly affect Linear Regression performance
+## Dataset
 
-## Model Used
-- Multiple Linear Regression
-- Train/Test Split (80/20)
-- MinMaxScaler (for normalization experiment)
+The dataset contains chemical attributes of red wine such as:
 
-## Sample Prediction
-Input:
-TV = 200, Radio = 40, Newspaper = 50
+- Fixed Acidity
+- Volatile Acidity
+- Citric Acid
+- Residual Sugar
+- Chlorides
+- Free Sulfur Dioxide
+- Total Sulfur Dioxide
+- Density
+- pH
+- Sulphates
+- Alcohol
 
-Predicted Sales:
-19.79 units
+**Target Variable:**  
+`Quality` – wine quality score ranging from **0 to 10**.
 
-## Conclusion
-TV advertising is the most influential feature for predicting sales. The model demonstrates strong predictive performance with multiple features.
+---
+
+## Analysis
+
+The project explores relationships between wine properties and quality, including:
+
+- Most frequent wine quality score
+- Correlation of **fixed acidity**, **alcohol**, and **free sulfur dioxide** with quality
+- Effect of **volatile acidity** on wine quality
+- Average **residual sugar** for highest and lowest quality wines
+
+---
+
+## Models Used
+
+- Decision Tree Classifier  
+- Random Forest Classifier  
+
+Model performances are evaluated and compared using **accuracy scores**.
+
+---
+
+## Technologies
+
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib / Seaborn  
+- Scikit-learn  
+- Google Colab
+
+---
+
